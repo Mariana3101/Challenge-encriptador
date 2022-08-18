@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #e5e5e5;
+}
+header {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+
+  width: 120px;
+  height: 48px;
+}
+
+.div-principal {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  font-family: "Inter";
+  font-style: normal;
+  
+}
+.column1 {
+  flex: 70%;
+  padding-left: 15px;
+  display: inline-block;
+  text-align: left;
+
+  vertical-align: top;
+}
+.formulario {
+  display: inline-block;
+  height: 100%;
+  width: 95%;
+}
+
+.div-input-texto {
+  padding-left: 80px;
+  height: 87%;
+}
+
+.text-input {
+  height: 90%;
+  width: 100%;
+  resize: none;
+  
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+
+  color: #0a3871;
+  border-style: none;
+  background: #e5e5e5;
+  border: 0;
+}
+
+::placeholder {
+  color: #0a3871;
+}
+/*div de los button*/
+.div-encriptacion {
+  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  gap: 24px;
+
+  height: 67px;
+}
+/*btn encriptar */
+
+.btn-encriptar,
+.btn-desencriptar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px;
+  gap: 8px;
+
+  width: 49%;
+  height: 67px;
+
+  border-radius: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 18px;
+}
+.btn-encriptar {
+  background: #0a3871;
+  color: white;
+}
+
+.btn-desencriptar {
+  background: #d8dfe8;
+  color: #0a3871;
+}
+.mensajeError {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  font-size: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+}
+.mensaje-box {
+  text-align: center;
+  font-weight: bold;
+
+  font-family: "Inter";
+  font-style: normal;
+}
+.column2 {
+  
+  flex: 28%;
+  padding-bottom: 10px;
+
+  display: inline-block;
+
+  height: 100%;
+
+  background: #ffffff;
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+}
+
+.muneco {
+  padding: 20px;
+  height: 100%;
+
+  max-width: 80%;
+}
+
+.muneco2 {
+  padding: 20px;
+  height: 100%;
+  display: none;
+  max-width: 80%;
+}
+/*otro textarea*/
+.text-input2 {
+  height: 90%;
+  width: 90%;
+  padding: 20px;
+  gap: 16px;
+
+  font-size: 24px;
+  resize: none;
+  border: none;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.btn-copiar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  margin: auto;
+  width: 90%;
+  height: 67px;
+
+  background: #d8dfe8;
+  color: #0a3871;
+  border-radius: 24px;
+  font-size: 18px;
+}
+
+/*https://es.stackoverflow.com/questions/267783/medidas-est%C3%A1ndar-para-las-media-queries*/
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+/* tablet*/
+@media (min-width: 576px) and (max-width: 778px) and (orientation: portrait) {
+  .div-principal {
+    flex-direction: column;
+  }
+  .div-encriptacion {
+    flex-direction: row;
+  }
+
+  .muneco {
+    display: none;
+    visibility: hidden;
+  }
+  .muneco2{
+    display: none;
+    visibility: hidden;
+  }
+  .column2 {
+    border-radius: 0%;
+    margin-top: 10%;
+  }
+}
+/* mobile*/
+@media (max-width: 575.98px) and (orientation: portrait) {
+  .column1 {
+    padding-bottom: 10%;
+  }
+  .div-encriptacion {
+    flex-direction: column;
+  }
+  .btn-encriptar,
+  .btn-desencriptar,
+  .btn-copiar {
+    width: 100%;
+  }
+ 
+  .muneco {
+    display: none;
+    visibility: hidden;
+  }
+  .muneco2{
+    display: none;
+    visibility: hidden;
+  }
+
+  .mensajeTexto2 {
+    visibility: visible;
+  }
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 0%;
+    margin-top: 45%;
+    
+  }
+}
