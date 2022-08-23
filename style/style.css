@@ -3,10 +3,12 @@
 }
 body {
   background: #e5e5e5;
+  width: 100%;
+  height: 100vh;
 }
 header {
   width: 100%;
-  height: 100%;
+  height: 20%;
   display: inline-block;
   padding: 15px;
 }
@@ -26,17 +28,18 @@ header {
   display: flex;
   align-items: stretch;
   flex-wrap: wrap;
-  font-family: "Inter";
-  font-style: normal;
-  
+  /*font-family: "Inter";
+  font-style: normal;*/
 }
 .column1 {
   flex: 70%;
   padding-left: 15px;
   display: inline-block;
-  text-align: left;
+  /*text-align: left;*/
 
   vertical-align: top;
+
+ 
 }
 .formulario {
   display: inline-block;
@@ -53,7 +56,7 @@ header {
   height: 90%;
   width: 100%;
   resize: none;
-  
+
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -128,7 +131,6 @@ header {
   font-style: normal;
 }
 .column2 {
-  
   flex: 28%;
   padding-bottom: 10px;
 
@@ -167,6 +169,8 @@ header {
   border: none;
   font-family: "Inter";
   font-style: normal;
+
+  
 }
 
 .btn-copiar {
@@ -183,6 +187,13 @@ header {
   color: #0a3871;
   border-radius: 24px;
   font-size: 18px;
+}
+footer p{
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+  text-align: right;
+  padding-top: 10px;
 }
 
 /*https://es.stackoverflow.com/questions/267783/medidas-est%C3%A1ndar-para-las-media-queries*/
@@ -204,7 +215,7 @@ header {
     display: none;
     visibility: hidden;
   }
-  .muneco2{
+  .muneco2 {
     display: none;
     visibility: hidden;
   }
@@ -226,12 +237,12 @@ header {
   .btn-copiar {
     width: 100%;
   }
- 
+
   .muneco {
     display: none;
     visibility: hidden;
   }
-  .muneco2{
+  .muneco2 {
     display: none;
     visibility: hidden;
   }
@@ -247,6 +258,5 @@ header {
     gap: 32px;
     border-radius: 0%;
     margin-top: 45%;
-    
   }
 }

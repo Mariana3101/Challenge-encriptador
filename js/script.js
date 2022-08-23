@@ -36,15 +36,7 @@ function encriptar(e) {
     mensajeTexto.value = resultado;
     //Para ocultar el muneco y el label
     if (resultado) {
-      muneco.style.display = "none";
-      mensajeTexto2.style.display = "none";
-
-      muneco2.style.display = "block";
-      muneco2.style.visibility = "hidden";
-
-      mensajeTexto.style.color = "#495057";
-      mensajeTexto.style.fontFamily = "Inter";
-      mensajeTexto.style.fontWeight = "400";
+      desaparece();
     }
   } else {
     mostrarError("Solo palabras en minúsculas,sin acentos");
@@ -52,6 +44,12 @@ function encriptar(e) {
     return;
   }
 }
+/* Para desaparecer al muneco y el label  */
+function desaparece(){
+  muneco.style.display = "none";
+  mensajeTexto2.style.display = "none";
+}
+
 
 function desencriptar(e) {
   e.preventDefault();
@@ -75,8 +73,8 @@ function desencriptar(e) {
 
     mensajeTexto.value = resultado;
   } else {
-    mostrarError("Solo palabras en minúsculas,sin acentos");
-
+    mostrarError(+"Solo palabras en minúsculas,sin acentos");
+   
     return;
   }
 }
