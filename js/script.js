@@ -45,11 +45,10 @@ function encriptar(e) {
   }
 }
 /* Para desaparecer al muneco y el label  */
-function desaparece(){
+function desaparece() {
   muneco.style.display = "none";
   mensajeTexto2.style.display = "none";
 }
-
 
 function desencriptar(e) {
   e.preventDefault();
@@ -74,7 +73,7 @@ function desencriptar(e) {
     mensajeTexto.value = resultado;
   } else {
     mostrarError(+"Solo palabras en minúsculas,sin acentos");
-   
+
     return;
   }
 }

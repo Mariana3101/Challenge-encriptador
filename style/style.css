@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
   background: #e5e5e5;
@@ -38,8 +40,6 @@ header {
   /*text-align: left;*/
 
   vertical-align: top;
-
- 
 }
 .formulario {
   display: inline-block;
@@ -74,7 +74,7 @@ header {
 }
 /*div de los button*/
 .div-encriptacion {
-  padding-left: 60px;
+  /*padding-left: 60px;*/
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -151,12 +151,6 @@ header {
   max-width: 80%;
 }
 
-.muneco2 {
-  padding: 20px;
-  height: 100%;
-  display: none;
-  max-width: 80%;
-}
 /*otro textarea*/
 .text-input2 {
   height: 90%;
@@ -169,8 +163,6 @@ header {
   border: none;
   font-family: "Inter";
   font-style: normal;
-
-  
 }
 
 .btn-copiar {
@@ -188,7 +180,7 @@ header {
   border-radius: 24px;
   font-size: 18px;
 }
-footer p{
+footer p {
   font-size: 20px;
   font-weight: bold;
   color: #555555;
@@ -215,10 +207,7 @@ footer p{
     display: none;
     visibility: hidden;
   }
-  .muneco2 {
-    display: none;
-    visibility: hidden;
-  }
+
   .column2 {
     border-radius: 0%;
     margin-top: 10%;
@@ -242,14 +231,7 @@ footer p{
     display: none;
     visibility: hidden;
   }
-  .muneco2 {
-    display: none;
-    visibility: hidden;
-  }
 
-  .mensajeTexto2 {
-    visibility: visible;
-  }
   .column2 {
     display: flex;
     flex-direction: column;
